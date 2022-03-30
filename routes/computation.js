@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
     value=Math.random()
     res.write("Computes the values for Math.atan and math.cbrt function."+"\n")
     res.write('Math.pow applied to '+value+" is "+Math.pow(value)+"\n");
-    res.write('Math.sign applied to '+value+" is "+Math.pow(value)+"\n");
+    res.write('Math.sign applied to '+value+" is "+Math.sign(value)+"\n");
     res.end('Math.tanh applied to '+value+" is "+Math.tanh(value));
     res.end('Math.trunc applied to '+value+" is "+Math.trunc(value));
  });
